@@ -4,25 +4,35 @@
   <title>OtterEvents</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="dashboard">
+<div id="stripe">
+	<div id="stripeInner">
+		<div id="loginTools">
+			You are logged in as <a class="button" href="../dashboard">jotter</a>
+			<a class="button" href="..">Sign Out</a>
+		</div>
+	</div>
+</div>
 <div id="container">
 	<div id="header">
-		<h1>Otter Events</h1>
+		<div class="logo" align="left"><img src="../assets/otter_events_small.png" /></div>
 		<div id="nav">
-			<ul>
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-			</ul>
+			<!-- nothing here right now... -->
 		</div>
 	</div>
 	<div id="content">
 		<%= yield %>
 	</div>
-	<div id="footer">
-		<p>This is a footer</p>
-	</div>
 </div>
+<div id="footer">
+	<p>Copyright 2012 - Otter Events.</p>
+	<p>Otter Events is in no way affiliated with California State University, Monterey Bay</p>
+</div>
+
+
+
 </body>
 </html>

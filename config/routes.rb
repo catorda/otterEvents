@@ -1,7 +1,8 @@
 OtterEvents::Application.routes.draw do
   resources :microposts
-
+  resources :dashboard
   resources :users
+  resources :event
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
