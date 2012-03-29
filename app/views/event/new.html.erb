@@ -1,0 +1,53 @@
+<%=@wtf %>
+<div class="input">
+        <form>
+            <label for="name">Name of the Event:</label>
+            <input name="name" type="text" /><br />
+            <label for="location">Location:</label>
+            <input name="location" type="text"/><br />
+            <label for="desc">Description:</label>
+            <textarea name="desc" rows="5" cols="15"></textarea><br />
+            <label for="dateStart">When:</label>
+            <input name="dateStart" type="text"/>
+            <label for="dateEnd"></label>
+            <input name="dateEnd" type="text"/><br />
+            <label for="type">Type of Event:</label>
+            <input name="type" type="text"/><br />
+            <label for="private">Privacy:</label>
+            <select name="private">
+            <option value="private">Private</option>
+            <option value="public">Public</option>
+            </select><br/>
+            <label for="sharable">Flyers:</label>
+            <input name="sharable"type="file" /><br>
+            <label for="photo">Photo:</label>
+            <input name="photo"type="file" /><br>
+            
+            <center><input type="submit" value="Submit" /></center>
+            </form>
+		</div>		
+
+
+
+<style>
+.input{
+	margin:auto;
+	width:500px;
+	min-height:300px;
+	background-color:#EEEEEE;
+	
+	padding-top:50px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+}
+
+label {
+	display:block;
+	font-weight:bold;
+	float:left;
+	width:160px;
+	text-align:right;
+	color:#66cc00;
+}
+</style>

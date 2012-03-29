@@ -1,0 +1,54 @@
+		<div id="headline">
+			<div class="padding">
+				<div class="selections">
+					<ul>
+						<li><a class="active" href="#">BBQ on the quad  <span>Tomorrow 8:00am</span></a></li>
+						<li><a href="#">Matt's Poetry Slam  <span>Tomorrow 4:30pm</span></a></li>
+						<li><a href="#">Hike on the ord  <span>Tuesday 4:30pm</span></a></li>
+						<li><a href="#">KEGGER @ Petersburg  <span>Friday 10:30pm</span></a></li>
+						<li><a href="#">friday night Magic  <span>Friday 10:30pm</span></a></li>
+					</ul>
+				</div>
+				<div class="infoBox">
+					<h3>BBQ on the quad</h3>
+					<p><img src="../assets/sample/bbq.jpg" hspace="10" align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis, purus eu fringilla lacinia, urna eros mattis quam, at posuere lorem felis eu purus. Integer augue nulla, varius et tempus in, consequat vel nisl. Quisque viverra quam et nisl accumsan aliquam. Donec venenatis rutrum cursus.
+					<a href="#">View More</a></p>
+				</div>
+				<br class="clear" />
+				<p class="small" style="margin-top:5px;"><a href="#">View all</a></p>
+			</div>
+		</div>
+		<div>
+			<div id="eventFeed">
+				<div class="padding">
+					<div class="header">
+						<h4>Event Feed</h4>
+					</div>
+					<ul>
+						<li><a href="#">test event</a></li>
+						<li><a href="#">test event</a></li>
+						<li><a href="#">test event</a></li>
+						<li><a href="#">test event</a></li>
+						<li><a href="#">test event</a></li>
+						<li><a href="#">test event</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="myEvents">
+				<div class="padding">
+					<a href="../event/new" id="createEventButton">Create Event</a>
+					<ul>
+						<li><a href="#">My Event 1</a></li>
+						<li><a href="#">My Event 2</a></li>
+						<li><a href="#">My Event 3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		$('#headline .selections a').bind('click', function() {
+			$('#headline .selections a').removeClass('active');
+			$(this).addClass('active');
+			//do ajax stuff here for infoBox
+		});
+		</script>
