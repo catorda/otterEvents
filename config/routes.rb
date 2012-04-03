@@ -3,6 +3,9 @@ OtterEvents::Application.routes.draw do
   resources :dashboard
   resources :users
   resources :event
+  
+  match "/events" => redirect("/event")
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

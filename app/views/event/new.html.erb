@@ -1,16 +1,15 @@
-<%=@wtf %>
 <div class="input">
-        <form>
+        <form accept-charset="UTF-8" action="/event" class="new_event" id="new_event" method="post">
             <label for="name">Name of the Event:</label>
-            <input name="name" type="text" /><br />
-            <label for="location">Location:</label>
-            <input name="location" type="text"/><br />
+            <input name="event[name]" type="text" /><br />
+            <!--<label for="location">Location:</label>
+            <input name="event[location]" type="text"/><br />
             <label for="desc">Description:</label>
-            <textarea name="desc" rows="5" cols="15"></textarea><br />
-            <label for="dateStart">When:</label>
-            <input name="dateStart" type="text"/>
-            <label for="dateEnd"></label>
-            <input name="dateEnd" type="text"/><br />
+            <textarea name="event[description]" rows="5" cols="15"></textarea><br />
+            <label for="timeStart">When:</label>
+            <input name="timeStart" type="text"/>
+            <label for="timeEnd"></label>
+            <input name="event[timeEnd]" type="text"/><br />
             <label for="type">Type of Event:</label>
             <input name="type" type="text"/><br />
             <label for="private">Privacy:</label>
@@ -21,12 +20,13 @@
             <label for="sharable">Flyers:</label>
             <input name="sharable"type="file" /><br>
             <label for="photo">Photo:</label>
-            <input name="photo"type="file" /><br>
+            <input name="photo"type="file" /><br>-->
             
-            <center><input type="submit" value="Submit" /></center>
+            <input name="commit" type="submit" value="Submit" />
             </form>
 		</div>		
 
+<%= button_to "Back", events_path, :method => :get %>
 
 
 <style>
