@@ -9,8 +9,16 @@
   <b>Event name:</b>
   <%= @event.name %>
 </p>
+<p>
+  <b>Event Location:</b>
+  <%= @event.location %>
+</p>
+<p>
+  <b>Event Description</b>
+  <%= @event.description %>
+</p>
 
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'Back to Dashboard', "/dashboard" %>
 
