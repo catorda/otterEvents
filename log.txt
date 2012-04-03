@@ -1,104 +1,101 @@
-2012-03-29T22:58:25+00:00 heroku[web.1]: State changed from created to starting
-2012-03-29T15:58:26-07:00 heroku[slugc]: Slug compilation finished
-2012-03-29T22:58:28+00:00 heroku[web.1]: Starting process with command `thin -p 51148 -e production -R /home/heroku_rack/heroku.ru start`
-2012-03-29T22:58:29+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
-2012-03-29T22:58:29+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-03-29T22:58:29+00:00 app[web.1]: >> Listening on 0.0.0.0:51148, CTRL+C to stop
-2012-03-29T22:58:29+00:00 heroku[web.1]: State changed from starting to up
-2012-03-29T22:58:30+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-03-29T22:58:30+00:00 app[web.1]: >> Stopping ...
-2012-03-29T22:58:30+00:00 heroku[nginx]: 198.189.249.54 - - [29/Mar/2012:22:58:30 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-03-29T22:58:31+00:00 heroku[nginx]: 198.189.249.54 - - [29/Mar/2012:22:58:31 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-03-29T22:58:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-29T22:58:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-29T22:58:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-29T22:58:31+00:00 heroku[web.1]: Process exited with status 0
-2012-03-29T22:58:33+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
-2012-03-29T22:58:33+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= se
-rvice= status=503 bytes=
-2012-03-29T22:58:33+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-29T22:58:33+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-29T22:58:33+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-29T22:58:33+00:00 heroku[nginx]: 198.189.249.54 - - [29/Mar/2012:22:58:33 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-03-29T22:58:33+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-29T23:01:31+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-29T23:01:31+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-29T23:01:31+00:00 heroku[nginx]: 198.189.249.54 - - [29/Mar/2012:23:01:31 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-03-29T23:01:33+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-29T23:01:33+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-29T23:01:33+00:00 heroku[nginx]: 198.189.249.54 - - [29/Mar/2012:23:01:33 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-03-30T00:05:13+00:00 heroku[web.1]: Idling
-2012-03-30T00:05:25+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-03-30T00:05:25+00:00 app[web.1]: >> Stopping ...
-2012-03-30T00:05:26+00:00 heroku[web.1]: Process exited with status 0
-2012-03-30T00:05:26+00:00 heroku[web.1]: State changed from up to down
-2012-04-03T05:27:16+00:00 heroku[web.1]: Unidling
-2012-04-03T05:27:16+00:00 heroku[web.1]: State changed from down to created
-2012-04-03T05:27:16+00:00 heroku[web.1]: State changed from created to starting
-2012-04-03T05:27:19+00:00 heroku[web.1]: Starting process with command `thin -p 42169 -e production -R /home/heroku_rack/heroku.ru start`
-2012-04-03T05:27:19+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
-2012-04-03T05:27:19+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-04-03T05:27:19+00:00 app[web.1]: >> Listening on 0.0.0.0:42169, CTRL+C to stop
-2012-04-03T05:27:20+00:00 heroku[web.1]: State changed from starting to up
-2012-04-03T05:27:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins
- in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T05:27:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T05:27:22+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T05:27:24+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
-2012-04-03T05:27:24+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T05:27:24+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-03T05:27:24+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:05:27:24 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T05:27:26+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-04-03T05:27:26+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T05:27:26+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-03T05:27:26+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:05:27:26 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T05:27:26+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-04-03T05:27:26+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T05:27:26+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-03T05:27:26+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:05:27:26 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T05:27:32+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-04-03T05:27:32+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/dashboard dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T05:27:32+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/dashboard dyno= queue= wait= service= status=503 bytes=
-2012-04-03T05:27:32+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:05:27:32 +0000] "GET /dashboard HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-02T22:30:05-07:00 heroku[slugc]: Slug compilation started
-2012-04-02T22:30:18-07:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
-2012-04-02T23:02:29-07:00 her
-oku[slugc]: Slug compilation started
-2012-04-02T23:02:33-07:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
-2012-04-02T23:04:52-07:00 heroku[slugc]: Slug compilation started
-2012-04-02T23:04:56-07:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
-2012-04-02T23:06:32-07:00 heroku[slugc]: Slug compilation started
-2012-04-02T23:06:36-07:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
-2012-04-02T23:09:09-07:00 heroku[slugc]: Slug compilation started
-2012-04-02T23:09:13-07:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
-2012-04-02T23:15:19-07:00 heroku[slugc]: Slug compilation started
-2012-04-03T06:16:31+00:00 heroku[api]: Release v12 created by marklj@gmail.com
-2012-04-03T06:16:31+00:00 heroku[api]: Deploy 7785e0c by marklj@gmail.com
-2012-04-03T06:16:32+00:00 heroku[web.1]: State changed from up to bouncing
-2012-04-03T06:16:32+00:00 heroku[web.1]: State changed from bouncing to created
-2012-04-03T06:16:32+00:00 heroku[web.1]: State changed from created to starting
-2012-04-02T23:16:32-07:00 heroku[slugc]: Slug compilation finished
-2012-04-03T06:16:34+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-04-03T06:16:34+00:00 app[web.1]: >> Stopping ...
-2012-04-03T06:16:35+00:00 heroku[web.1]: Starting process with command `thin -p 24192 -e production -R /home/heroku_rack/heroku.ru start`
-2012-04-03T06:16:35+00:00 heroku[web.1]: Process exited with status 0
-2012-04-03T06:16:36+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-04-03T06:16:36+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
-2012-04-03T06:16:36+00:00 app[web.1]: >> Listening on 0.0.0.0:24192, CTRL+C to stop
-2012-04-03T06:16:37+00:00 heroku[web.1]: State changed from starting to up
-2012-04-03T06:16:42+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T06:16:42+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T06:16:42+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plu
-gins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-04-03T06:16:46+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
-2012-04-03T06:16:46+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/dashboard dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T06:16:46+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/dashboard dyno= queue= wait= service= status=503 bytes=
-2012-04-03T06:16:46+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:06:16:46 +0000] "GET /dashboard HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T06:16:50+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-04-03T06:16:50+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-03T06:16:50+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-04-03T06:16:50+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:06:16:50 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T06:16:53+00:00 heroku[router]: Error H99 (Platform error) -> GET otterevents.heroku.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-03T06:16:53+00:00 heroku[nginx]: 207.62.149.239 - - [03/Apr/2012:06:16:53 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
-2012-04-03T06:16:53+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-04-03T06:16:53+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET otterevents.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+2012-04-03T22:56:26+00:00 app[web.1]:   /usr/ruby1.9.2/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__2882530198461464425__process_action__4364486272901072596__callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callb
+ack'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+2012-04-03T22:56:26+00:00 heroku[nginx]: 198.189.249.54 - - [03/Apr/2012:22:56:26 +0000] "GET /event/16/edit HTTP/1.1" 500 643 "http://otterevents.heroku.com/event/16" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0" otterevents.heroku.com
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4268976892312428022__call__2701962937382144845__callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   /home/heroku_rack/lib/static_assets.rb:9:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
+2012-04-03T22:56:26+00:00 app[web.1]:   /home/heroku_rack/lib/last_access.rb:15:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:64:in `block in call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `each'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   /home/heroku_rack/lib/date_header.rb:14:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:76:in `block in pre_process'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:74:in `catch'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:74:in `pre_process'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:57:in `process'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:42:in `receive_data'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/backends/base.rb:57:in `start'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/server.rb:156:in `start'
+2012-04-03T22:56:26+00:00 app[web.1]:   eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+2012-04-03T22:56:26+00:00 app[web.1]:   eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/controllers/controller.rb:80:in `start'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/runner.rb:177:in `run_command'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) lib/thin/runner.rb:143:in `run!'
+2012-04-03T22:56:26+00:00 app[web.1]:   thin (1.2.6) bin/thin:6:in `<top (required)>'
+2012-04-03T22:56:26+00:00 app[web.1]:   /usr/ruby1.9.2/bin/thin:19:in `load'
+2012-04-03T22:56:26+00:00 app[web.1]: 
+2012-04-03T22:56:26+00:00 app[web.1]: 
+2012-04-03T22:56:26+00:00 app[web.1]:   /usr/ruby1.9.2/bin/thin:19:in `<main>'

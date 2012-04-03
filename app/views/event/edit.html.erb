@@ -1,0 +1,53 @@
+<div class="input">
+        <%= form_tag(:event, :method => "put") %>
+            <label for="name">Name of the Event:</label>
+            <input name="event[name]" type="text" value="<%=@event.name %>" /><br />
+            <label for="location">Location:</label>
+            <input name="event[location]" type="text" value="<%=@event.location %>"/><br />
+            <label for="desc">Description:</label>
+            <textarea name="event[description]" rows="5" cols="15"><%=@event.description %></textarea><br />
+            <label for="timeStart">When:</label>
+            <input name="event[timeStart]" type="text" value="<%=@event.timeStart %>"/>
+            <label for="timeEnd"></label>
+            <input name="event[timeEnd]" type="text" value="<%=@event.timeEnd %>"/><br />
+            <label for="type">Type of Event:</label>
+            <input name="type" type="text"/><br />
+            <label for="private">Privacy:</label>
+            <select name="private">
+            <option value="private">Private</option>
+            <option value="public">Public</option>
+            </select><br/>
+            <label for="sharable">Flyers:</label>
+            <input name="sharable"type="file" /><br>
+            <label for="photo">Photo:</label>
+            <input name="photo"type="file" /><br>
+            
+            <%= submit_tag("Edit Event") %>
+            </form>
+		</div>		
+
+<%= button_to "Back", events_path, :method => :get %>
+
+
+<style>
+.input{
+	margin:auto;
+	width:500px;
+	min-height:300px;
+	background-color:#EEEEEE;
+	
+	padding-top:50px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+}
+
+label {
+	display:block;
+	font-weight:bold;
+	float:left;
+	width:160px;
+	text-align:right;
+	color:#66cc00;
+}
+</style>
