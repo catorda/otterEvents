@@ -38,9 +38,12 @@
 				<div class="padding">
 					<a href="../event/new" id="createEventButton">Create Event</a>
 					<ul>
-						<li><a href="#">My Event 1</a></li>
-						<li><a href="#">My Event 2</a></li>
-						<li><a href="#">My Event 3</a></li>
+						<% @events.each do |event| %>
+						<li>
+							<%= link_to event.name, event %>
+								
+						</li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
