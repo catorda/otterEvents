@@ -1,3 +1,4 @@
+		
 		<div id="headline">
 			<div class="padding">
 				<div class="selections">
@@ -38,11 +39,15 @@
 				<div class="padding">
 					<a href="../event/new" id="createEventButton">Create Event</a>
 					<ul>
-						<% @events.each do |event| %>
-						<li>
-							<%= link_to event.name, event %>
-								
-						</li>
+						<% 
+						if @events.size > 0
+							@events.each do |event| %>
+							<li>
+								<%= link_to event.name, event %>	
+							</li>
+							<% end
+						else %>
+							<p class="small" align="center">You do not have any events.</p>
 						<% end %>
 					</ul>
 				</div>

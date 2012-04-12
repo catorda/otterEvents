@@ -1,4 +1,7 @@
 class EventController < ApplicationController
+  
+  before_filter :authenticate_user_tbl!
+  
   def index
     @events = Event.all
 
@@ -9,7 +12,6 @@ class EventController < ApplicationController
   end
   def create
     @event = Event.new(params[:event])
-
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }

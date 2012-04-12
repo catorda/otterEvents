@@ -11,8 +11,14 @@
 <div id="stripe">
 	<div id="stripeInner">
 		<div id="loginTools">
-			You are logged in as <a class="button" href="../dashboard">jotter</a>
-			<a class="button" href="..">Sign Out</a>
+			<% if user_tbl_signed_in? -%>
+			You are logged in as 
+			<%= link_to current_user_tbl.email, "/dashboard", :class => "button" %>
+			<%= link_to 'Sign out', destroy_user_tbl_session_path, :method => :delete, :class => "button" %>
+			<% else %>
+			<%= link_to 'Sign In', new_user_tbl_session_path, :class => "button" %>
+			<%= link_to 'Register', new_user_tbl_registration_path, :class => "button" %>
+			<% end %>
 		</div>
 	</div>
 </div>
@@ -20,10 +26,15 @@
 	<div id="header">
 		<div class="logo" align="left"><img src="../assets/otter_events_small.png" /></div>
 		<div id="nav">
-			<!-- nothing here right now... -->
+			<p class="notice"><%= notice %></p>
+       		<p class="alert"><%= alert %></p>
 		</div>
 	</div>
 	<div id="content">
+		<% if user_tbl_signed_in? -%>
+			<p>signed in</p>
+			<p><%= link_to 'Sign out', destroy_user_tbl_session_path, :method => :delete %></p>
+		<% end -%>
 		<%= yield %>
 	</div>
 </div>

@@ -1,8 +1,12 @@
 OtterEvents::Application.routes.draw do
+  devise_for :user_tbls
+
   resources :microposts
   resources :dashboard
   resources :users
   resources :event
+  
+  root :to => "home#index"
   
   match "/events" => redirect("/event")
 
