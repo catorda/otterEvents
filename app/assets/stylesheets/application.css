@@ -7,8 +7,31 @@ body {
 	margin:0px;
 	padding:0px;
 }
+.notice {
+	display:block;
+	background:#CFF;
+	border:dotted 1px #3CF;
+	padding: 15px;
+	margin:0px;
+	text-align:center;
+	font-weight:bold;
+	position:relative;
+	top:-15px;
+}
+.alert {
+	display:block;
+	background:#FCC;
+	border:dotted 1px #FF0000;	
+	padding: 15px;
+	margin:0px;
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	position:relative;
+	top:-15px;
+}
 .padding {
-	margin:15px;	
+	margin:15px;
 }
 br.clear {
 	display:block;
