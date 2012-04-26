@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20120426013301) do
     t.datetime "timeStart"
     t.datetime "timeEnd"
     t.boolean  "private"
-    t.string   "user_id"
+    t.integer  "user_id"
   end
 
   create_table "microposts", :force => true do |t|

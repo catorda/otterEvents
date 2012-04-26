@@ -1,5 +1,5 @@
 class UserTbl < ActiveRecord::Base
-  #has_many :events, :dependent => :destroy
+  has_many :events, :dependent => :destroy
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -9,4 +9,6 @@ class UserTbl < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+  
+  validates_uniqueness_of :email, :case_sensitive => false
 end
