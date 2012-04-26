@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120420010037) do
+ActiveRecord::Schema.define(:version => 20120426013301) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -47,14 +47,6 @@ ActiveRecord::Schema.define(:version => 20120420010037) do
     t.datetime "updated_at",                             :null => false
   end
 
-  add_index "user_tbls", ["email"], :name => "index_user_tbls_on_email", :unique => true
   add_index "user_tbls", ["reset_password_token"], :name => "index_user_tbls_on_reset_password_token", :unique => true
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
 end
