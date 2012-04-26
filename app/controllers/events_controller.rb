@@ -12,7 +12,8 @@ class EventController < ApplicationController
   end
   def create
     @event = Event.new(params[:event])
-    @event.user_id = current_user_tbl.id
+    @event.user_id = current_user_tbl
+
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
