@@ -12,7 +12,7 @@ class EventController < ApplicationController
   end
   def create
     @event = Event.new(params[:event])
-    @event.user_id = current_user_tbl
+    @event.user_id = current_user_tbl.id
 
     respond_to do |format|
       if @event.save
