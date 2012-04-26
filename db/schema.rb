@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120412194123) do
+ActiveRecord::Schema.define(:version => 20120420010037) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20120412194123) do
     t.datetime "timeStart"
     t.datetime "timeEnd"
     t.boolean  "private"
+    t.string   "user_id"
   end
 
   create_table "microposts", :force => true do |t|

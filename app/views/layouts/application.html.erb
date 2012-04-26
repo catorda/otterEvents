@@ -13,7 +13,7 @@
 		<div id="loginTools">
 			<% if user_tbl_signed_in? -%>
 			You are logged in as 
-			<%= link_to current_user_tbl.email, "/dashboard", :class => "button" %>
+			<%= link_to current_user_tbl.email.split("@").first, "/dashboard", :class => "button" %>
 			<%= link_to 'Sign out', destroy_user_tbl_session_path, :method => :delete, :class => "button" %>
 			<% else %>
 			<%= link_to 'Sign In', new_user_tbl_session_path, :class => "button" %>
