@@ -26,12 +26,16 @@
 						<h4>Event Feed</h4>
 					</div>
 					<ul>
-						<li><a href="#">test event</a></li>
-						<li><a href="#">test event</a></li>
-						<li><a href="#">test event</a></li>
-						<li><a href="#">test event</a></li>
-						<li><a href="#">test event</a></li>
-						<li><a href="#">test event</a></li>
+						<% 
+						if @events.size > 0
+							@events.each do |event| %>
+							<li>
+								<%= link_to event.name, event %>	
+							</li>
+							<% end
+						else %>
+							<p class="small" align="center">You do not have any events.</p>
+						<% end %>
 					</ul>
 				</div>
 			</div>
@@ -40,8 +44,8 @@
 					<a href="../event/new" id="createEventButton">Create Event</a>
 					<ul>
 						<% 
-						if @events.size > 0
-							@events.each do |event| %>
+						if @my_events.size > 0
+							@my_events.each do |event| %>
 							<li>
 								<%= link_to event.name, event %>	
 							</li>
