@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
   
   def index
     @my_events = Event.where(:user_id => current_user_tbl.id)
-    @events = Event.all
+    @events = Event.limit(10)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
